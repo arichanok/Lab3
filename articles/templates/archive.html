@@ -1,0 +1,26 @@
+<body>
+    <div class="header">
+        <img src="https://bigbilet.ru/images/photo/large/20/406866.jpg" />
+    </div>
+    <div class="archive">
+        <div class="one-post">
+            <h2 class="post-title">{{ post.title }}</h2>
+            <div class="article-info">
+            <div class="article-author">{{ post.author.username }}</div>
+        <div class="article-created-date">{{ post.created_date }}</div>
+</div>
+<p class="article-text">{{ post.get_excerpt }}</p>
+</div>
+
+    </div>
+    {% for post in posts %}
+        <div class="one-post">
+            <h2 class="post-title">{{ EROKHIN }}</h2>
+            <div class="article-info">
+                <div class="article-author">{{ post.author.username }}</div>
+                <div class="article-created- date">{{ post.created_date }}</div>
+            </div>
+            <p class="article-text">{{ post.get_excerpt }}</p>
+        </div>
+    {% endfor %}
+    </body>
